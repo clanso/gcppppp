@@ -6,8 +6,8 @@ services:
       - "3001:3000"
     environment:
       - NODE_ENV=production
-      - API_KEY=sk-xxx
-      - ACCOUNT_FIRST={"PROJECT_ID":"","CLIENT_ID":"","CLIENT_SECRET":"","REFRESH_TOKEN":""}
+      - API_KEY=sk-aihamuko4thewin
+      - ACCOUNT_FIRST={"PROJECT_ID":"groovy-producer-430216-h1","CLIENT_ID":"32555940559.apps.googleusercontent.com","CLIENT_SECRET":"ZmssLNjJy2998hD4CTg2ejr2","REFRESH_TOKEN":"1//0gXREAD0aR9RiCgYIARAAGBASNwF-L9Ir_HwXqwoS91g4d-VRM65XoH_NwnJhFYabq3VNlgp3q3tB7ttawsFFXr0yM78OntSLcGM"}
       - ACCOUNT_SECOND={"PROJECT_ID":"","CLIENT_ID":"","CLIENT_SECRET":"","REFRESH_TOKEN":""}
     volumes:
       - ./logs:/usr/src/app/logs
