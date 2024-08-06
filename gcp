@@ -1,0 +1,14 @@
+version: '3'
+services:
+  gcp-claude:
+    image: syferie/gcp-claude:v1.0.2
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=production
+      - API_KEY=sk-xxx
+      - ACCOUNT_FIRST={"PROJECT_ID":"","CLIENT_ID":"","CLIENT_SECRET":"","REFRESH_TOKEN":""}
+      - ACCOUNT_SECOND={"PROJECT_ID":"","CLIENT_ID":"","CLIENT_SECRET":"","REFRESH_TOKEN":""}
+    volumes:
+      - ./logs:/usr/src/app/logs
+    restart: unless-stopped
